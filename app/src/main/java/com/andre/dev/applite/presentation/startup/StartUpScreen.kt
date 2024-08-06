@@ -33,7 +33,6 @@ import com.andre.dev.applite.ui.theme.Black
 import com.andre.dev.applite.ui.theme.Gray
 import com.andre.dev.applite.ui.theme.Green
 
-@Preview
 @Composable
 fun StartUpScreen(
   navigateToLogin: () -> Unit = {},

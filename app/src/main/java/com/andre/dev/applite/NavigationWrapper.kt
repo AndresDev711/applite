@@ -7,10 +7,14 @@ import androidx.navigation.compose.composable
 import com.andre.dev.applite.presentation.login.LogInScreen
 import com.andre.dev.applite.presentation.signup.SignUpScreen
 import com.andre.dev.applite.presentation.startup.StartUpScreen
+import com.google.firebase.auth.FirebaseAuth
 
 
 @Composable
-fun NavigationWrapper(navHostController: NavHostController) {
+fun NavigationWrapper(
+  navHostController: NavHostController,
+  auth: FirebaseAuth
+) {
   NavHost(
     navController = navHostController,
     startDestination = "initial"
@@ -23,7 +27,7 @@ fun NavigationWrapper(navHostController: NavHostController) {
         )
     }
     composable("logIn") {
-      LogInScreen()
+      LogInScreen(auth = auth)
     }
     composable("signUp") {
       SignUpScreen()
