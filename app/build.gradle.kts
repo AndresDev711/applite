@@ -63,6 +63,10 @@ dependencies {
   //FIREBASE
   implementation(platform(libs.firebase.bom))
   implementation(libs.firebase.crashlytics)
+  implementation(libs.firebase.auth)
+  
+  //NAVIGATION
+  implementation(libs.androidx.navigation.compose)
   
   //test
   testImplementation(libs.junit)
