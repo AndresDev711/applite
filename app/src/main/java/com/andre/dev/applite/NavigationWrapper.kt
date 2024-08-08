@@ -30,7 +30,7 @@ fun NavigationWrapper(
       LogInScreen(auth = auth)
     }
     composable("signUp") {
-      SignUpScreen()
+      SignUpScreen(auth = auth)
     }
   }
 }
